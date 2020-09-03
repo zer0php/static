@@ -20,7 +20,7 @@ class AsyncVueComponentLoader {
         this._compoentsDir = componentsDir;
     }
 
-    loadVueComponents(componentNames) {
+    loadComponents(componentNames) {
         componentNames.forEach(componentName => this.loadComponent(componentName));
     }
 
