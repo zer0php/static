@@ -17,7 +17,7 @@ class AsyncVueComponentLoader {
     }
 
     constructor(componentsDir) {
-        this._compoentsDir = componentsDir;
+        this._componentsDir = componentsDir;
     }
 
     loadComponents(componentNames) {
@@ -25,7 +25,7 @@ class AsyncVueComponentLoader {
     }
 
     loadComponent(componentName) {
-        const file = `${this._compoentsDir}${componentName}.vue`;
+        const file = `${this._componentsDir}${componentName}.vue`;
         fetch(file)
             .then(response => response.text())
             .then(data => {
