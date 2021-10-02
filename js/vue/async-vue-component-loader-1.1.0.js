@@ -129,7 +129,6 @@ class AsyncVueComponentLoader {
 
     _wrapWithFunction(code) {
         return `((__loader) => {\n${code}\n})`;
-
     }
 
     _upperCaseFirstLetter(name) {
