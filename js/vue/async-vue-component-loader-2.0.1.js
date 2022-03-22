@@ -136,8 +136,6 @@ class AsyncVueComponentLoader {
             .replace(/import .*;/g, '')
             .trim();
 
-        console.log(transpiledCode)
-
         return this._transpileExports(transpiledCode);
     }
 
